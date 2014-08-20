@@ -1,0 +1,17 @@
+{
+	"name" : "mouf/root-container-test-subprojectB",
+	"require" : {
+		"php" : ">=5.3",
+		"mouf/pimple-interop" : "dev-master"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"Acme" : "src"
+		}
+	},
+	"extra" : {
+		"container-interop" : {
+			"container-factory" : "Acme\\ProjectB\\Factory::getContainer"
+		}
+	}
+}
